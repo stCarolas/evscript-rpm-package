@@ -1,0 +1,10 @@
+aliases:
+  - name: github
+    url: https://github.com/
+
+components:
+  - name: evscript
+    git:
+      src: github:unrelentingtech/evscript.git
+    distgit:
+      src: github:stCarolas/evscript-rpm-package.git
