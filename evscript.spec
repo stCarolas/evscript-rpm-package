@@ -9,10 +9,7 @@ Source0:    somewhere
 This is my first RPM package, which does nothing.
 
 %prep
-%setup
-# we have no source, so nothing here
-# cd %{buildroot}
-# tar -xf %{sourcedir}/%{source0}
+%setup -q
 
 %build
 cargo build --release
@@ -22,7 +19,7 @@ mkdir -p %{buildroot}/usr/bin/
 install -m 755 target/release/evscript %{buildroot}/usr/bin/evscript
 
 %files
-%{buildroot}/usr/bin/evscript
+/usr/bin/evscript
 
 %changelog
 # let's skip this for now
