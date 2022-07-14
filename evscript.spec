@@ -9,9 +9,10 @@ Source0:    somewhere
 This is my first RPM package, which does nothing.
 
 %prep
+%setup
 # we have no source, so nothing here
 # cd %{buildroot}
-tar -xf %{sourcedir}/%{source0}
+# tar -xf %{sourcedir}/%{source0}
 
 %build
 cargo build --release
