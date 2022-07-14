@@ -3,6 +3,7 @@ Version:    1
 Release:    1
 Summary:    Most simple RPM package
 License:    FIXME
+Source:     somewhere
 
 %description
 This is my first RPM package, which does nothing.
