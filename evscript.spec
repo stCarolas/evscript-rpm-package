@@ -10,7 +10,7 @@ This is my first RPM package, which does nothing.
 
 %prep
 # we have no source, so nothing here
-cd %{buildroot}
+# cd %{buildroot}
 tar -xf %{sourcedir}/%{source0}
 
 %build
@@ -21,7 +21,7 @@ mkdir -p %{buildroot}/usr/bin/
 install -m 755 target/release/evscript %{buildroot}/usr/bin/evscript
 
 %files
-/usr/bin/evscript
+%{buildroot}/usr/bin/evscript
 
 %changelog
 # let's skip this for now
