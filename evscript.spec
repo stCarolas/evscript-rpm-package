@@ -8,6 +8,8 @@ Source0:    somewhere
 %description
 This is my first RPM package, which does nothing.
 
+%global debug_package %{nil}
+
 %prep
 %setup -q
 
