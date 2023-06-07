@@ -1,7 +1,5 @@
 # podman run -it -v $PWD:/project:z fedora:36 sh
-dnf install -y 'dnf-command(copr)'
-dnf copr enable -y rpmsoftwaremanagement/rpm-gitoverlay
-sudo dnf install -y git cargo rpm-gitoverlay
-git clone https://github.com/myfreeweb/evscript
+dnf install -y git cargo
+git clone https://codeberg.org/valpackett/evscript.git
 cd evscript
 cargo build --release
